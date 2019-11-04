@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
+body{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 75em;
+	margin: auto;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.float{
+	float: left;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+header{
+	background-color: #9c0000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.logo{
+	width: 20%;
+}
+.logo img{
+	width: 125px;
+} 
+.hamburger{
+	display: block;
+	margin:auto;
+	color: white;
+	font-size: 3em;
+	display: none;
+	text-align: center;
+}
+#toggle{
+	display: none;
+}
+nav{
+	width: 65%;
+}
+nav ul{
+	list-style: none;
+	padding: 1.05em 0 0 0; 
+}
+nav ul li{
+	float: left;
+	padding-right: 2em;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: helvetica, arial, sans-serif;
+	text-transform: uppercase;
+}
+nav ul li a:hover{
+	text-decoration: underline;
+}
+.social{
+	float: right;
+}
+.social img{
+	width: 25px;
+	padding-top: 1.5em;
+	padding-right: 0.5em
+}
+.hero{
+	overflow: auto;
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/movie.jpg);
+	background-size: cover;
+}
+h1{
+	font-family: 'Monoton', cursive;
+	font-size: 5em;
+	font-weight: 300;
+	color: white;
+	padding: 1.5em 0 0.5em 0.5em;
+}
+/*--------------------------Slide--------------------------*/
+.slide img{
+	width: 20%;
+	margin: 1.5em 0 0 5em;
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(35,35,35,0.5);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(35,35,35,0.5);
+	box-shadow: 10px 10px 5px -6px rgba(35,35,35,0.5);
+}
+.slider{
+	position: relative;
+	margin: auto;
+	background-color: white;
+	padding-bottom: 1.25em;
+}
+
+.prev,.next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 2em;
+}
+.next{
+	right: 0;
+}
+.prev:hover,.next:hover{
+	color: white;
+	background-color: #232323;
+}
+.selector{
+	text-align: center;
+	background-color: #232323;
+	border: ;
+}
+.indicator{
+	cursor: pointer;
+	width: 20%;
+	background-color: grey;
+	display: inline-block;
+	float: left;
+	transition: background-color 0.6s ease;
+	opacity: .5;
+}
+.active,.indicator:hover{
+	opacity: 1;
+}
+
+.caption{
+  color: #232323;
+  font-family: helvetica, arial, sans-serif;
+  padding-left: 1.5em;
+  font-size: 1.25em;
+  width: 55%;
+ }
+
+.caption a{
+	border: 0.2em solid #9c0000;
+	text-decoration: none;
+	color: #9c0000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0.25em;
+	display: inline-block;
+}
+.caption a:hover{
+	background-color: #9c0000;
+	color: white;
+}
+.time{
+	line-height: 2.5em;
+}
+button{
+	border: 0.2em solid #232323;
+	background-color: white;
+	color: #232323;
+	font-size: 1.25em;
+}
+button:hover{
+	color: white;
+	background-color: #232323;
+}
+/*-----Slide Fade Animation---*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+.food{
+	font-family: helvetica, arial, sans-serif;
+}
+.food h3{
+	font-family: 'Monoton', cursive;
+	font-size: 3em;
+	font-weight: 300;
+	color: white;
+	margin: 0;
+}
+.food p{
+	color: white;
+	z-index: 1;
+}
+.food a{
+	border: 0.2em solid white;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0.25em;
+	display: inline-block;
+	z-index: 1;
+}
+.food a:hover{
+	color: black;
+	background-color: white;
+}
+.dinein{
+	background-image: url(../image/pizza.jpg);
+	background-size: cover;
+	overflow: auto;
+	padding: 5em 0 5em 2em;
+}
+.beverage{
+	background-image: url(../image/beverage.jpg);
+	background-size: cover;
+	background-position: left;
+	overflow: auto;
+	padding: 5em 0 5em 2em;
+}
+.theater{
+	background-image: url(../image/popcorn.jpg);
+	background-size: cover;
+	overflow: auto;
+	padding: 5em 0 5em 2em;
+}
+footer{
+	background-color: #9c0000;
+	overflow: auto;
+	width: 100%;
+	padding-bottom: 1.5em;
+	color: white;
+}
+footer strong{
+	font-family: helvetica, arial, sans-serif;
+	text-transform: uppercase;
+}
+footer nav{
+	padding-left: 6em;
+}
+footer ul li ul li{
+	padding: 0 0 1.25em 2em;
+	font-size: 0.8em;
+	float: none;
+}
+footer hr{
+	color: white;
+	width: 90%;
+}
+footer p{
+	font-family: calibri, arial, sans-serif;
+	text-align: center;
+}
+/*-----------------Menu Page---------------------*/
+.ourmenu{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/menu.jpg);
+	background-size: cover;
+	overflow: auto;
+}
+.menu .selector{
+	background-color: grey;
+}
+.menu .indicator{
+	cursor: pointer;
+	background-color: #e3e3e3;
+	width: 20%;
+	padding-top: 1.25em;
+	float: left;
+	display: inline;
+	transition: background-color 0.6s ease;
+	opacity: 1;
+	overflow: auto;
+}
+.menu .active, .menu .indicator:hover{
+	background-color: white;
+	overflow: auto;
+}
+.menu .indicator img{
+	width: 30%;
+}
+.menu .indicator p{
+	color: #9c0000;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu ul{
+	list-style: none;
+}
+.list{
+	padding: 0;
+	margin: 0;
+}
+.price{
+	text-align: right;
+	margin: 0;
+	padding-left: 5em;
+}
+/*-----------------Media Inquiry------------------*/
+@media only screen and (max-width: 600px) {
+	body{
+		background-image: none;
+	}
+	.container{
+		width: 100%;
+	}
+	.hamburger{
+		display: block;
+		font-size: 3em;
+		margin: 0 auto;
+		text-align: center;
+		cursor: pointer;
+		border: none;
+	}
+	
+	header nav{
+		width: 50%;
+	}
+	header ul{
+		display: none;
+	}
+	header nav ul li{
+		float: none;
+		text-align: center;
+		padding-bottom: 1.25em;
+		padding-left: 1.75em;
+	}
+	#toggle:checked + ul{
+		display: block;
+	}
+	.caption{
+		padding-left: 5em;
+		width: 70%;
+	}
+	.social img{
+		padding-right: 0.5em
+	}
+	.hero{
+		background-position: top;
+	}
+	.slider{
+		padding-bottom: 1.25em;
+	}
+	.slider img{
+		width: 40%;
+	}
+	.caption{
+		font-size: 1em;
+	}
+	.food h3{
+		font-size: 2em;
+	}
+	.food p{
+		width: 30%;
+	}
+	.dinein{
+		padding: 2em 0 2em 2em;
+	}
+	.beverage{
+		padding: 2em 0 2em 2em;
+	}
+	.theater{
+		padding: 2em 0 2em 2em;
+	}
+	footer nav{
+		padding-left: 2em;
+	}
+	.ourmenu{
+		font-size: .50em;
+	}
+	.menu img{
+		margin-left: 1em;
+	}
+	.menu .indicator{
+		width: 33%;
+	}
+	.menu .indicator:last-child{
+		padding-left: 1%;
+	}
+	.price{
+		padding-left: 3em;
+	}
+}

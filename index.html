@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Film Feast | Home</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="clearfix">
+		<a href="index.html" class="logo float"><img src="image/logo.png" alt="Film Feast Logo"></a>
+		<nav class="float">
+			<label for="toggle" class="hamburger">&#9776;</label>
+				<input type="checkbox" id="toggle">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Now Showing</a></li>
+				<li><a href="#">Movie</a></li>
+				<li><a href="menu.html">Menu</a></li>
+			</ul>
+		</nav>
+		<section class="social">
+			<a href="#"><img src="image/login.png" alt="login icon" title="User Log In"></a>
+			<a href="#"><img src="image/instagram.png" alt="instagram icon" title="Film Feast Instagram"></a>
+			<a href="#"><img src="image/twitter.png" alt="twitter icon" title="Film Feast Twitter"></a>
+			<a href="#"><img src="image/facebook.png" alt="facebook icon" title="Film Feast Facebook"></a>
+		</section>
+	</header>
+	<section class="hero">
+		<h1>Film<br>Feast</h1>
+	</section>
+	<section class="movie">
+		<div class="slider">
+		<div class="slide clearfix fade">
+			<img src="image/thor.jpg" alt="The movie poster for Thor:Ragnorok" class="float">
+			<div class="caption float">
+				<h2>Thor Ragnarok</h2>
+				<p>2 HR 9MIN | PG-13<br>
+				Comedy/Fantasy/Action-Adventure<br>
+				<p class="time"><button>9:50AM</button> <button>12:10PM</button> <button>2:30PM</button> <button>5:00PM</button> <button>7:30PM</button></p>
+				<a href="#">Get Ticket</a>
+			</div>
+		</div>
+		<div class="slide clearfix fade">
+			<img src="image/captainmarvel.jpg" alt="The movie poster for Captain Marvel" class="float">
+			<div class="caption float">
+				<h2>Captain Marvel</h2>
+				<p>1:00 AM - 3:00PM | PG-13<br>
+				 Science Fiction/Action-Adventure</p>
+				 <p class="time"><button>10:50AM</button> <button>1:10PM</button> <button>3:30PM</button> <button>6:00PM</button> <button>8:30PM</button></p>
+				<a href="#">Get Ticket</a>
+			</div>
+		</div>
+		<div class="slide clearfix fade">
+			<img src="image/civilwar.jpg"alt="The movie poster for Captain America: Civil War" class="float">
+			<div class="caption float">
+				<h2>Civil War</h2>
+				<p>2 HR 9MIN | PG-13<br>
+				Action</p>
+				<p class="time"><button>8:50AM</button> <button>11:10AM</button> <button>1:30PM</button> <button>4:00PM</button> <button>6:30PM</button></p>
+				
+				<a href="#">Get Ticket</a>
+			</div>
+		</div>
+		<div class="slide clearfix fade">
+			<img src="image/moana.jpg" alt="The movie poster for Moana" class="float">
+			<div class="caption float">
+			<h2>Moana</h2>
+				<p>1HR 40MIN | PG-13<br>
+				Animated/Comedy</p>
+				<p class="time"><button>10:50AM</button> <button>1:00PM</button> <button>2:50PM</button> <button>5:00PM</button> <button>6:50PM</button></p>
+				<a href="#">Get Ticket</a>
+			</div>
+		</div>
+		<div class="slide clearfix fade">
+			<img src="image/starwars.jpg" alt="The movie poster for Star Wars: The Force Awakens" class="float">
+			<div class="caption float">
+			<h2>Star Wars: The Force Awakens</h2>
+				<p>2 HR 9MIN | PG-13<br>
+				Science Fiction/Fantasy/Action Adventure</p>
+				<p class="time"><button>10:50AM</button> <button>2:10PM</button> <button>4:30PM</button> <button>6:00PM</button> <button>9:30PM</button></p>
+				<a href="#">Get Ticket</a>
+			</div>
+		</div>
+				<a class="prev" onclick="arrow(-1)">&#10094;</a>
+				<a class="next" onclick="arrow(1)">&#10095;</a>		
+		</div>
+		<div class="selector clearfix">
+				<img src="image/thor.jpg" class="indicator" onclick="current(1)" alt="thumbnail image for Thor: Ragnarok"><img src="image/captainmarvel.jpg" class="indicator" onclick="current(2)" alt="thumbnail image for Captain Marvel"><img src="image/civilwar.jpg" class="indicator" onclick="current(3)" alt="thumbnail image for Captain America: Civil War"><img src="image/moana.jpg" class="indicator" onclick="current(4)" alt="thumbnail image for Moana"><img src="image/starwars.jpg" class="indicator" onclick="current(5)" alt="thumbnail image for Star Wars: The Force Awakens">
+		</div>	
+	</div>		
+	</section>
+	<section class="food">
+		<div class="dinein">
+			<h3>Dine-In</h3>
+			<p>For those that want a restaurant experience while watching a movie.</p>
+			<a href="menu.html">View Menu</a>
+		</div>
+		<div class="beverage">
+			<h3>Beverage</h3>
+			<p>Soft drinks, water, and wine.</p>
+			<a href="menu.html">View Menu</a>
+		</div>
+		<div class="theater">
+			<h3>Theater Food</h3>
+			<p>For those that want a traditional movie watching experience.</p>
+			<a href="menu.html">View Menu</a>
+		</div>
+	</section>
+	<footer>
+		<nav>
+			<ul class="clearfix">
+				<li class="float"><strong>Our Company</strong>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Theater Near Me </a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">FAQs</a></li>
+					</ul>
+				</li>
+				<li class="float"><strong>Policies</strong>
+					<ul>
+						<li><a href="#">Age Restriction</a></li>
+						<li><a href="#">Outside Food</a></li>
+						<li><a href="#">Refund Policy</a></li>
+						<li><a href="#">Watching Policy</a></li>
+					</ul>
+				</li>
+				<li class="float"><strong>Special Offers</strong>
+					<ul>
+						<li><a href="#">Discounts</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">Gift Cards</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<hr>
+		<p>&#169; Film Feast. All rights reserved.</p>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

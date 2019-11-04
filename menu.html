@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Film Feast | Menu</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="clearfix">
+		<a href="index.html" class="logo float"><img src="image/logo.png" alt="Film Feast Logo"></a>
+		<nav class="float">
+			<label for="toggle" class="hamburger">&#9776;</label>
+			<input type="checkbox" id="toggle">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Now Showing</a></li>
+				<li><a href="#">Movie</a></li>
+				<li><a href="#">Menu</a></li>
+			</ul>
+		</nav>
+		<section class="social">
+			<a href="#"><img src="image/login.png" alt="login icon" title="User Log In"></a>
+			<a href="#"><img src="image/instagram.png" alt="instagram icon" title="Film Feast Instagram"></a>
+			<a href="#"><img src="image/twitter.png" alt="twitter icon" title="Film Feast Twitter"></a>
+			<a href="#"><img src="image/facebook.png" alt="facebook icon" title="Film Feast Facebook"></a>
+		</section>
+	</header>
+	<section class="ourmenu">
+		<h1>Our Menu</h1>
+	</section>
+	<section class="menu">
+		<div class="selector clearfix">
+				<div class="indicator" onclick="current(1)">
+					<img src="image/pizzaIcon.png"   alt="pizza icon"> 
+					<p>Dine-In</p>
+				</div>
+				<div class="indicator" onclick="current(2)">
+					<img src="image/beverageIcon.png"  alt="beverage icon"> 
+					<p>Beverage</p>
+				</div>
+				<div class="indicator" onclick="current(3)">
+					<img src="image/popcornIcon.png"  alt="theater food icon"> 
+					<p>Theater food</p>
+				</div>
+			</div>
+		<div class="slider">
+			<div class="slide clearfix fade">
+				<img src="image/burger.jpg" alt="images of burgers" class="float"><img src="image/lobster.jpg" alt="images of lobster food" class="float">
+				<div class="caption float">
+					<h2>Appetizer</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Mini Burger</li>
+							<li>Sushi Sampler</li>
+							<li>Eggs & Bacon</li>
+							<li>Mozarella Sticks</li>
+							<li>Gourmet French Fries</li>
+						</ul>
+						<ul class="price float">
+							<li>$4.00</li>
+							<li>$5.00</li>
+							<li>$3.00</li>
+							<li>$3.00</li>
+							<li>$5.00</li>
+						</ul>
+					</div>
+					<h2>Main Menu</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Monster Burger</li>
+							<li>Supreme Pizza</li>
+							<li>Sushi Special</li>
+							<li>Bentos</li>
+							<li>Super Sampler</li>
+							<li>Ice Cream Sundae</li>
+							<li>Supreme Salad</li>
+							<li>Chicken Special</li>
+							<li>The Lobster Special</li>
+						</ul>
+						<ul class="price float">
+							<li>$10.00</li>
+							<li>$15.00</li>
+							<li>$13.00</li>
+							<li>$14.00</li>
+							<li>$9.00</li>
+							<li>$9.00</li>
+							<li>$9.00</li>
+							<li>$15.00</li>
+							<li>$20.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="slide clearfix fade">
+				<img src="image/softdrink.jpg" alt="images of various drinks" class="float">
+				<img src="image/soda.jpg" alt="images of various brand sodas" class="float">
+				<div class="caption float">
+					<h2>Drinks</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Soft Drinks</li>
+							<li>Tea</li>
+							<li>Coffee</li>
+							<li>Hot Chocolate</li>
+							<li>Beer</li>
+							<li>Wine</li>
+						</ul>
+						<ul class="price float">
+							<li>$1.25</li>
+							<li>$2.00</li>
+							<li>$2.00</li>
+							<li>$2.25</li>
+							<li>$5.00</li>
+							<li>$4.00</li>
+						</ul>
+					</div>
+					<h2>Special Drinks</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Orange Surprise</li>
+							<li>Root Beer Punch</li>
+							<li>Green Fruit Punch</li>
+							<li>Super Potion</li>
+							<li>Elixir</li>
+							<li>Jasmine Juice</li>
+						</ul>
+						<ul class="price float">
+							<li>$3.00</li>
+							<li>$4.50</li>
+							<li>$2.00</li>
+							<li>$2.25</li>
+							<li>$5.00</li>
+							<li>$4.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="slide clearfix fade">
+				<img src="image/hotdog.jpg"alt="images of hotdogs" class="float">
+				<div class="caption float">
+					<h2>Popcorn</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Large</li>
+							<li>Medium</li>
+							<li>Small</li>
+						</ul>
+						<ul class="price float">
+							<li>$5.00</li>
+							<li>$3.00</li>
+							<li>$1.00</li>
+						</ul>
+					</div>
+					<h2>Hot Dogs</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Chili Dog</li>
+							<li>Jumbo Dog</li>
+							<li>Cheese Dog</li>
+							<li>Long Dog</li>
+						</ul>
+						<ul class="price float">
+							<li>$3.00</li>
+							<li>$5.00</li>
+							<li>$2.00</li>
+							<li>$4.00</li>
+						</ul>
+					</div>
+					<h2>Snacks</h2>
+					<div class="clearfix">
+						<ul class="list float">
+							<li>Candy</li>
+							<li>Chips</li>
+							<li>Nachos</li>
+						</ul>
+						<ul class="price float">
+							<li>$1.00</li>
+							<li>$2.00</li>
+							<li>$5.00</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>	
+			</div>
+		</div>
+			
+	</div>		
+	</section>
+	<footer>
+		<nav>
+			<ul class="clearfix">
+				<li class="float"><strong>Our Company</strong>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Theater Near Me </a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">FAQs</a></li>
+
+					</ul>
+				</li>
+				<li class="float"><strong>Policies</strong>
+					<ul>
+						<li><a href="#">Age Restriction</a></li>
+						<li><a href="#">Outside Food</a></li>
+						<li><a href="#">Refund Policy</a></li>
+						<li><a href="#">Watching Policy</a></li>
+					</ul>
+				</li>
+				<li class="float"><strong>Special Offers</strong>
+					<ul>
+						<li><a href="#">Discounts</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">Gift Cards</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<hr>
+		<p>&#169; Film Feast. All rights reserved.</p>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
